@@ -1,0 +1,87 @@
+git init
+Cambiar la rama master por main
+git branch -m master main
+git push origin --delete master
+
+
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Honcito/mern-thinkboard.git
+git push -u origin main
+
+Para el deployment creamos un package.json en la raiz del proyecto para manejar backend y frontend
+npm init -y
+
+package.json: 
+    {
+  "name": "mern-thinkboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Honcito/mern-thinkboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Honcito/mern-thinkboard/issues"
+  },
+  "homepage": "https://github.com/Honcito/mern-thinkboard#readme",
+  "description": "",
+  "dependencies": {
+    "mern-thinkboard": "file:"
+  }
+}
+
+npm run build
+
+cambiarlo a: "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend"
+  },
+  y volverlo a cambiar: 
+    "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+
+  npm run build
+
+  Tenemos el backend en localhost:5001 y el frontend en localhost:5173 y queremos tenerlo bajo el mismo dominio
+  en el server.js
+    import path from 'path'
+
+    creamos const __dirname = path.resolve();
+
+    debajo de app.use("/api/notes", notesRoutes);
+
+    Si la aplicación corre en producción...
+
+    if(process.env.NODE_ENV === "production"){
+  app.use(express.static(path.join(__dirname, "../frontend/dist")))
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"))
+    });
+    };
+
+
+    Si no corre en producción...
+
+    // Si no lanzamos la aplicación en producción...
+if(process.env.NODE_ENV !== "production"){
+app.use(cors({
+  origin:"http://localhost:5173",
+}))
+}
+
+Añadir en el .env del backend
+NODE_ENV=production // en caso contrario se cambia a development
+
+npm run build
+
+npm run start
+y abrimos localhost:5001 y nos aparece la aplicación corriendo en una sola url, ahora la desplegamos en render
+

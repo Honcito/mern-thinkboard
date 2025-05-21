@@ -1,7 +1,0 @@
-git init
-Cambiar la rama master por main
-git branch -m master main
-
-
-git add .
-git commit -m "first commit"
