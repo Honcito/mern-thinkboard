@@ -109,3 +109,12 @@ B. Haz clic en tu avatar (esquina superior derecha) → Account Settings → Git
 C. Presiona el botón "Manage GitHub Permissions"
 D. Se abrirá GitHub → selecciona "Only select repositories" y marca mern-thinkboard
 E. Guarda los cambios y regresa a Render
+
+en la ventana de new web service:
+  Build Command : npm run Build
+  Build Command : npm run start
+
+  Elegir el plan gratuito
+
+  En variables de entorno, copiamos el .env y pegar en el primer input de las variables de render, no poner el de 
+  NODE_ENV
