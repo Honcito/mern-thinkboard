@@ -104,8 +104,8 @@ const api = axios.create({
 export default api;
 
 
-
-DEPLOY EN RENDER
-acceder
-Add New
-Web Service
+A. Ve a https://dashboard.render.com
+B. Haz clic en tu avatar (esquina superior derecha) → Account Settings → GitHub
+C. Presiona el botón "Manage GitHub Permissions"
+D. Se abrirá GitHub → selecciona "Only select repositories" y marca mern-thinkboard
+E. Guarda los cambios y regresa a Render
