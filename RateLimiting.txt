@@ -1,0 +1,25 @@
+RATE LIMITING REQUESTS
+
+Rate limiting is a way to control how often someone can do something on a website or app like
+how many times they can refresh a page, make a request to an API, or try to log in.
+Only 100 requests per user every 15 minutes
+
+RATE LIMITING HELPS WITH
+
+Preventing abuse(e.g., stopping someone from making 1000 login attempts in a minute)
+Protecting severs from getting overwhelmed
+
+                429 Too Many Requests
+
+upstash.com
+Login
+Redis - Create database
+connect to yor database - node
+copiar 
+        UPSTASH_REDIS_REST_URL
+        UPSTASH_REDIS_REST_TOKEN
+pegar en el .env
+
+npm i @upstash/ratelimit@2.0.5 @upstash/redis@1.34.9
+
+npm run dev

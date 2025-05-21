@@ -1,0 +1,99 @@
+cd frontend
+npm create vite@latest .
+React
+JavaScript
+npm install
+npm run dev
+ctrl-c
+npm i react-router
+npm i react-hot-toast
+
+https://react-hot-toast.com/
+Añadir en App.jsx
+import {Toaster} from 'react-hot-toast'
+Añadir al principio del div para probar: 
+    <button onClick={() => toast.success("congrats")}>Click me</button>
+
+daisyui.com
+npm i -D daisyui@latest
+en el App.css/podemos elegir el tema de la página que nos guste
+@plugin "daisyui" {
+    themes:  forest; }
+
+iconos
+npm i lucide-react
+
+Axios
+npm i axios
+
+CORS
+Is a browser security rule;
+When a website tries to get data from another website--like your frontend calling
+an API on a different domain--the browser might block it for security reasons.
+
+Example
+You have a frontend at: http://localhost:3000
+And an API bakend at: http://api.example.com
+
+Your frontend makes a fetch request to get data:
+fetch('http://api.example.com/users')
+
+But the browser says:
+"You're coming from localhost://300, and you're trying to access api.example.com.
+That's a different origin. I need to make sure the API allows this.
+
+heroicons.com
+headlessui.com
+react-hot-toast
+
+🎨 UI y Componentes
+Librería	Descripción breve	Web oficial
+Tailwind CSS	Utilidad CSS rápida, moderna y personalizable	https://tailwindcss.com
+DaisyUI	Componentes prehechos para Tailwind CSS	https://daisyui.com
+Headless UI	Componentes accesibles sin estilos (combina perfecto con Tailwind)	https://headlessui.com
+Heroicons	Íconos SVG gratuitos diseñados por el equipo de Tailwind	https://heroicons.com
+Lucide	Colección de íconos SVG personalizables y moderna	https://lucide.dev
+Radix UI	Componentes de UI accesibles para React (sin estilos)	https://www.radix-ui.com
+ShadCN UI	Colección de componentes construidos con Radix UI + Tailwind	https://ui.shadcn.com
+Material UI	Librería de componentes React con diseño Material Design	https://mui.com
+React Icons	Acceso a cientos de bibliotecas de íconos (FontAwesome, Feather, etc.)	https://react-icons.github.io/react-icons
+
+🧠 Estado y lógica
+Librería	Descripción	Web oficial
+Redux Toolkit	Manejo de estado global optimizado para React	https://redux-toolkit.js.org
+Zustand	Manejo de estado simple y ligero para React	https://zustand-demo.pmnd.rs
+React Query / TanStack Query	Manejo avanzado de datos y caché para llamadas API	https://tanstack.com/query/latest
+Jotai	Manejo de estado atómico en React	https://jotai.org
+Recoil	Manejo de estado desarrollado por Facebook	https://recoiljs.org
+
+🌐 API & Comunicación
+Librería	Descripción	Web oficial
+Axios	Cliente HTTP basado en promesas	https://axios-http.com
+SWR	Fetching reactivo de datos (de Vercel)	https://swr.vercel.app
+GraphQL	Consulta de datos flexible (usa con Apollo Client)	https://graphql.org
+Apollo Client	Cliente GraphQL para React	https://www.apollographql.com
+
+🛡️ Seguridad y Autenticación
+Herramienta	Descripción	Web oficial
+JWT	Autenticación por tokens	https://jwt.io
+bcryptjs	Hashing de contraseñas	https://www.npmjs.com/package/bcryptjs
+Passport.js	Middleware de autenticación para Node.js	https://www.passportjs.org
+Auth.js (antes NextAuth)	Autenticación para React/Next	https://authjs.dev
+
+💽 Base de Datos / Caché / Backend tools
+Herramienta	Descripción	Web oficial
+MongoDB	Base de datos NoSQL	https://www.mongodb.com
+Redis	Almacenamiento en caché, ideal para sesiones o colas	https://redis.io
+Prisma	ORM moderno para Node.js	https://www.prisma.io
+Mongoose	ODM para MongoDB y Node.js	https://mongoosejs.com
+Firebase	Backend como servicio (BaaS), base de datos, auth, etc.	https://firebase.google.com
+
+⚙️ Utilidades / Herramientas Dev
+Herramienta	Descripción	Web oficial
+dotenv	Cargar variables de entorno	https://www.npmjs.com/package/dotenv
+nodemon	Reinicia el servidor automáticamente en desarrollo	https://nodemon.io
+ESLint + Prettier	Linter y formateador de código	https://eslint.org / https://prettier.io
+Husky + lint-staged	Ganchos de Git para formatear y validar antes de commits	https://typicode.github.io/husky
+Day.js / date-fns	Manipulación de fechas ligera	https://day.js.org / https://date-fns.org
+
+https://bg.ibelick.com/
