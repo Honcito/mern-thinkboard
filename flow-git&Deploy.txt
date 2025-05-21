@@ -78,7 +78,7 @@ app.use(cors({
 }
 
 Añadir en el .env del backend
-NODE_ENV=production // en caso contrario se cambia a development
+NODE_ENV=development // en caso contrario se cambia a production
 
 npm run build
 
